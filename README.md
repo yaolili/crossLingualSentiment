@@ -1,3 +1,3 @@
 # crossLingualSentiment
-#usage
+# Usage
 ./run.sh
