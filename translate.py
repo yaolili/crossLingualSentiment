@@ -49,7 +49,7 @@ if __name__ == '__main__':
                 print "line No. " + str(i)
                 exit()
             id = aList[0]
-            #train/book.cn should use following code for its summary is a url.
+            #train/book.cn should use following code for its summary is a URL.
             # if i == 2035:
                 # summary = "在现在Valder毕比展"
             # else:

@@ -39,10 +39,5 @@ class Classifier:
         
         print("SVM report %s\n" % (metrics.classification_report(testLabels, self.y_pred)))
         
-        # clf = Ridge(alpha=1.0)
-        # clf.fit(self.X_train, self.y_train) 
-        # self.y_pred = clf.predict(self.X_test)
-        # print("Ridge report %s\n" % (metrics.classification_report(testLabels, self.y_pred)))
-
         
 

@@ -24,7 +24,6 @@ def writeFile(sampleSets, writeFile):
         text = sampleSets[i][3].replace('\n', ' ').replace('\t', ' ')
         category = sampleSets[i][4]
         result.write(id + "\t" + summary + "\t" + polarity + "\t" + text+ "\t" + category + "\n") 
-        #result.write(text + "\n")
     print "preprocess.py writeFile() done!"
     result.close()
 

@@ -104,5 +104,4 @@ if __name__ == "__main__":
     
     print sys.argv[2]
     trainMatrix, testMatrix = featureSelection(trainMatrix, trPolarity, testMatrix, tePolarity)
-    # classifierInstance = Classifier(trainMatrix, trPolarity, testMatrix, tePolarity)
 

@@ -7,8 +7,6 @@
 
 import numpy as np
 from vaderSentiment.vaderSentiment import sentiment as vaderSentiment 
-from textblob import TextBlob
-from textblob.sentiments import NaiveBayesAnalyzer
 
 class Sentiment:
     def VSPolarity(self, corpus):
@@ -20,12 +18,3 @@ class Sentiment:
         print "Sentiment VSPolarity done!"
         return np.array(self.result)
         
-    def TBPolarity(self, corpus):
-        self.result = []
-        for sentence in corpus:
-            tb = TextBlob(sentence, analyzer = NaiveBayesAnalyzer())
-            pos = tb.sentiment[1]
-            neg = tb.sentiment[2]
-            aList = [pos, neg]
-            self.result.append(aList)
-        return np.array(self.result)
